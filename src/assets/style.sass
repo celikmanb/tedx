@@ -1,0 +1,900 @@
+
+body, html
+  padding: 0
+  margin: 0
+  min-height: 100%
+  font-weight: 300
+  background-color: #2b2b2b
+
+input, textarea, select, button
+  font-weight: 300
+
+.w-40
+  width: 40%
+
+.w-60
+  width: 60%
+
+.font-weight-700
+  font-weight: 700
+
+.font-weight-500
+  font-weight: 500
+
+.font-weight-300
+  font-weight: 300
+
+.opacity_7
+  opacity: .7
+
+.font-size-13
+  font-size: 13px
+
+.font-size-15
+  font-size: 15px
+
+.font-size-16
+  font-size: 16px
+.font-size-18
+  font-size: 18px
+.font-size-20
+  font-size: 20px
+.font-size-24
+  font-size: 24px
+.hidden
+  display: none
+
+.user-select-none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.bg-none
+  background: none
+
+.cursor-pointer
+  cursor: pointer
+
+.z-index-0
+  z-index: 0
+
+.loading
+  position: fixed
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background-color: #ffffff
+  font-size: 60px
+  font-weight: 500
+  color: rgba(0, 0, 0, 0.6)
+  text-transform: uppercase
+  opacity: .9
+  z-index: 9999
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  img
+    width: 120px
+    max-width: 70%
+    height: auto
+
+.multiselect__tags
+  border: 1px solid #dadada
+
+th, td
+  vertical-align: middle !important
+
+.btn-icon
+  border-radius: 50%
+  width: 35px
+  height: 35px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  & *
+    max-height: 100%
+    max-width: 100%
+
+.wrapper
+  padding-top: 120px
+
+.page-title-box
+  padding: 22px 0
+
+.page-title-box-page
+  padding: 5px 15px 0px 15px
+  margin: 0 0 35px 0
+  background-color: #ffffff
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02)
+  line-height: 13px
+
+.page-title-box .page-title
+  font-size: 20px
+  margin-bottom: 0
+  margin-top: 0
+  font-weight: 600
+
+.breadcrumb > li + li:before, .breadcrumb-item + .breadcrumb-item::before
+  content: ''
+  display: none
+
+#toast-container > div
+  opacity: .95
+
+.nowrap
+  white-space: nowrap
+
+.table-responsive
+  overflow: visible !important
+
+.mx-input
+  height: 38px
+
+.vertical-align-top
+  vertical-align: top !important
+
+.navigation-menu li:hover i
+  color: $primary !important
+  opacity: .6 !important
+
+.time-picker
+  display: inline-block
+  position: relative
+  vertical-align: middle
+  *
+    box-sizing: border-box
+  input.display-time
+    display: block
+    width: 100%
+    height: calc(2.25rem + 2px)
+    padding: 0.375rem 0.75rem
+    font-size: 1rem
+    line-height: 1.5
+    color: #495057
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid #ced4da
+    border-radius: 0.25rem
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+  .clear-btn
+    position: absolute
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    top: 0
+    right: 0
+    bottom: 0
+    margin-top: -0.15em
+    z-index: 3
+    font-size: 1.1em
+    line-height: 1em
+    vertical-align: middle
+    width: 1.3em
+    color: #d2d2d2
+    background: rgba(255, 255, 255, 0)
+    text-align: center
+    font-style: normal
+    -webkit-transition: color .2s
+    transition: color .2s
+    &:hover
+      color: #797979
+      cursor: pointer
+  .time-picker-overlay
+    z-index: 2
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  .dropdown
+    position: absolute
+    z-index: 5
+    top: calc(2.2em + 2px)
+    left: 0
+    background: #fff
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15)
+    width: 10em
+    height: 10em
+    font-weight: normal
+    .select-list
+      width: 10em
+      height: 10em
+      overflow: hidden
+      display: flex
+      flex-flow: row nowrap
+      align-items: stretch
+      justify-content: space-between
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+      flex: 1
+      overflow-x: hidden
+      overflow-y: auto
+      &.minutes, &.seconds, &.apms
+        border-left: 1px solid #fff
+      li
+        text-align: center
+        padding: 0.3em 0
+        color: #161616
+        &:not(.hint):hover
+          background: rgba(0, 0, 0, 0.08)
+          color: #161616
+          cursor: pointer
+        &.active
+          background: #41B883
+          color: #fff
+          &:hover
+            background: #41B883
+            color: #fff
+    .hint
+      color: #a5a5a5
+      cursor: default
+      font-size: 0.8em
+
+
+
+.navbar-custom
+  background-color: #ffffff !important
+  a
+    color: #999 !important
+
+.nav-tabs > li > a, .nav-pills > li > a
+  font-weight: 400
+
+.reservation_form
+  position: relative
+
+.reservation_form_title
+  font-size: 20px
+  font-weight: 500
+
+.dpicker
+  width: 100%
+
+.dpicker input
+  margin: 0
+  display: block
+  width: 100% !important
+  height: calc(2.25rem + 2px)
+  padding: 0.375rem 0.75rem
+  font-size: 1rem
+  line-height: 1.5
+  color: #495057
+  background-color: #fff
+  background-clip: padding-box
+  border: 1px solid #ced4da
+  border-radius: 0.25rem
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+
+.dpicker .close
+  height: calc(2.25rem + 2px)
+
+.reservation_form .form_icon
+  max-width: 100%
+  max-height: 100%
+  height: 20px
+  bottom: 0
+  margin: auto 10px auto 0px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2
+
+.pl-35
+  padding-left: 35px
+
+.checkout-form-group
+  display: block
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(150, 165, 174, 0.25)
+  box-shadow: 0px 0px 60px 0px rgba(150, 165, 174, 0.25)
+  float: left
+  width: 90%
+  margin-left: 5%
+  margin-right: 5%
+  margin-top: 0
+  border-radius: 10px
+  padding: 40px
+  background-color: #fff
+
+.input-top-title
+  font-size: 16px
+  opacity: .5
+  margin-bottom: 3px
+  display: flex
+  align-items: end
+
+.input-bottom-title
+  font-size: 14px
+  font-weight: 400
+  display: flex
+  align-items: start
+
+.color-red
+  color: $primary
+
+.reservation_type_btn_group
+  border-radius: 10px !important
+  border: 2px solid rgba(233, 233, 233, 0.46)
+  border-bottom: 0
+  overflow: hidden
+
+.btn-default.btn-off-on
+  height: 60px
+  line-height: 60px
+  padding: 0
+  font-size: 17px
+  font-weight: 500
+  z-index: 0 !important
+
+.btn-default.btn-off-on.active
+  color: white
+  background-color: $primary
+
+.select-car-index
+  font-size: 13px
+  opacity: .6
+  color: #999
+  float: right
+
+.reservation_title_date
+  font-size: 15px
+  font-weight: 300
+  background-color: $secondary
+  color: white
+
+.reservation_title_date .date
+  font-size: 24px
+  font-weight: 500
+
+.voyage_code svg
+  margin-top: -3px
+  margin-right: 5px
+
+.voyage_code span
+  font-size: 15px
+  color: #98a6ad
+  font-weight: 300
+
+.reservation_hour
+  border: 2px solid #EFF1F3
+  -webkit-border-radius: 10px
+  -moz-border-radius: 10px
+  border-radius: 10px
+  height: 90px
+
+.reservation_hour .hour
+  font-size: 25px
+  font-weight: 500
+  padding: 0 40px
+  justify-content: center
+  span
+    margin-left: 7px
+
+.border-color-soft
+  border-color: #EFF1F3
+
+.waves-effect
+  z-index: 0
+
+.reservation_price
+  font-size: 25px
+  font-weight: 700
+  justify-content: center
+  .currency
+    font-size: 20px
+    font-weight: 500
+
+.reservation_hour .btn
+  font-size: 19px
+  padding: 11px 20px
+  border-radius: 6pt
+  position: absolute
+  right: 0px
+  background-color: white
+  border: 2px solid $success
+  &:hover, &:active, &:visited
+    background-color: #7ED206
+
+.selected_reservation
+  border-bottom: 2px solid rgba(85, 94, 99, 0.1)
+  background-color: #F5F5F6
+  font-size: 15px
+  color: #555E63
+  font-weight: 300
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  .type
+    font-size: 20px
+    font-weight: 500
+  &.total
+    background-color: $secondary
+    color: #fff
+
+.borderright
+  border-right: 2px solid rgba(85, 94, 99, 0.1)
+
+#topnav
+  z-index: 2
+
+#topnav .navigation-menu > li .submenu
+  min-width: 250px !important
+
+.show_detail
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  display: flex
+  align-items: center
+  justify-content: center
+
+.pay_btn
+  font-size: 20px
+  font-weight: 500
+
+.image_object_fit
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.sweet-content
+  padding: 0 !important
+
+.full-modal
+  .v-modal__panel
+    position: relative
+  .v-modal__body
+    padding: 0
+  .modal_close_btn
+    right: 5px
+    top: 5px
+    position: absolute
+    cursor: pointer
+    z-index: 2
+
+.model_close_hide .v-modal__heading
+  display: none
+
+.add_customer_bg
+  background: url("/static/images/addcustomer.png") bottom center
+  background-size: cover
+
+.add_customer_modal
+  max-height: 500px
+  overflow-x: auto
+
+.sweet-modal .sweet-title
+  display: flex
+  align-items: center
+
+.form_close_btn
+  position: absolute
+  left: -15px
+  top: -15px
+  z-index: 999
+
+.payment_types .btn
+  height: 94px
+  padding: 10px 30px
+
+.tickets
+
+.material_checkbox
+  position: relative
+  top: -0.375rem
+  margin: 0 1rem 0 0
+  cursor: pointer
+  &:before
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    content: ""
+    position: absolute
+    left: 0
+    z-index: 1
+    width: 1rem
+    height: 1rem
+    border: 2px solid #a4a4a4
+  &:checked:before
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    height: .5rem
+    border-color: #009688
+    border-top-style: none
+    border-right-style: none
+  &:after
+    content: ""
+    position: absolute
+    top: -0.125rem
+    left: 0
+    width: 1.1rem
+    height: 1.1rem
+    background: #fff
+    cursor: pointer
+
+.progress_div
+  .progresstext
+    white-space: nowrap
+    position: absolute
+    right: 0
+    top: calc(100% + 5px)
+    color: $dark
+
+.collapse_btn
+  position: absolute
+  left: 0px
+  top: -40px
+  z-index: 0
+
+.multiselect__select
+  top: 0
+  bottom: 0
+  margin: auto
+.multiselect--active
+  z-index: 888
+
+.sweet-modal
+  max-width: 800px !important
+  overflow: initial!important
+
+.editable_border
+  text-decoration: none
+  border-bottom: dashed 1px #007bff
+  cursor: pointer
+
+.search_form_input
+  width: 400px
+  max-width: 100%
+
+.nav-tabs .nav-link, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus
+  padding: 15px 30px !important
+  font-size: 16px !important
+
+.voyages
+  max-height: 800px
+  overflow-y: scroll
+  .voyage:nth-child(odd)
+    background-color: #f9f9f9
+.br-10
+  -webkit-border-radius: 10px
+  -moz-border-radius: 10px
+  border-radius: 10px
+.card-header-1
+  font-size: 18px
+  font-weight: 500
+  padding: 20px
+.overflow_hidden
+  overflow: hidden
+@media print
+  .print_100_100
+    flex: 0 0 100%
+    max-width: 100%
+    width: 100%
+.padding-20
+  padding: 20px
+.padding-18
+  padding: 18px
+.h-38
+  height: 38px
+.settings .card-header
+  background-color: #fff
+  padding: 0
+  a
+    border: 1px solid #eee
+    background-color: #fff
+    padding: 20px
+    display: block
+    font-size: 18px
+    font-weight: 500
+    &:not(.collapsed)
+      background-color: $primary
+      color: #fff!important
+      border-color: $primary
+.br-b-0
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+.left-0
+  left: 0
+
+
+
+
+
+
+
+.can-toggle
+  position: relative
+  *
+    box-sizing: border-box
+    &:before, &:after
+      box-sizing: border-box
+  input[type=checkbox]
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+    &[disabled] ~ label
+      pointer-events: none
+      .can-toggle__switch
+        opacity: 0.4
+    &:checked ~ label .can-toggle__switch
+      &:before
+        content: attr(data-unchecked)
+        left: 0
+      &:after
+        content: attr(data-checked)
+  label
+    user-select: none
+    position: relative
+    display: flex
+    align-items: center
+    .can-toggle__label-text
+      flex: 1
+      padding-left: 32px
+    .can-toggle__switch
+      cursor: pointer
+      position: relative
+      &:before
+        content: attr(data-checked)
+        position: absolute
+        top: 0
+        text-transform: uppercase
+        text-align: center
+      &:after
+        content: attr(data-unchecked)
+        position: absolute
+        z-index: 1
+        text-transform: uppercase
+        text-align: center
+        background: white
+        transform: translate3d(0, 0, 0)
+  input[type=checkbox]
+    &[disabled] ~ label
+      color: rgba(119, 119, 119, 0.5)
+    &:focus ~ label .can-toggle__switch, &:hover ~ label .can-toggle__switch
+      background-color: #777
+    &:focus ~ label .can-toggle__switch:after
+      color: #5e5e5e
+    &:hover ~ label
+      .can-toggle__switch:after
+        color: #5e5e5e
+      color: #6a6a6a
+    &:checked
+      ~ label
+        &:hover
+          color: #55bc49
+        .can-toggle__switch
+          background-color: #70c767
+          &:after
+            color: #4fb743
+      &:focus ~ label .can-toggle__switch, &:hover ~ label .can-toggle__switch
+        background-color: #5fc054
+      &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+        color: #47a43d
+  label
+    .can-toggle__label-text
+      flex: 1
+    .can-toggle__switch
+      transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1)
+      background: #848484
+      &:before
+        color: rgba(255, 255, 255, 0.5)
+      &:after
+        -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1)
+        transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1)
+        color: #777
+  input[type=checkbox]
+    &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4)
+    &:checked
+      ~ label .can-toggle__switch:after
+        transform: translate3d(65px, 0, 0)
+      &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4)
+  label
+    font-size: 14px
+    .can-toggle__switch
+      height: 36px
+      flex: 0 0 134px
+      border-radius: 4px
+      &:before
+        left: 67px
+        font-size: 12px
+        line-height: 36px
+        width: 67px
+        padding: 0 10px
+      &:after
+        top: 2px
+        left: 2px
+        border-radius: 2px
+        width: 65px
+        line-height: 32px
+        font-size: 12px
+      &:hover:after
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4)
+  &.can-toggle--size-small
+    input[type=checkbox]
+      &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4)
+      &:checked
+        ~ label .can-toggle__switch:after
+          transform: translate3d(44px, 0, 0)
+        &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4)
+    label
+      font-size: 13px
+      .can-toggle__switch
+        height: 28px
+        flex: 0 0 90px
+        border-radius: 2px
+        &:before
+          left: 45px
+          font-size: 10px
+          line-height: 28px
+          width: 45px
+          padding: 0 12px
+        &:after
+          top: 1px
+          left: 1px
+          border-radius: 1px
+          width: 44px
+          line-height: 26px
+          font-size: 10px
+        &:hover:after
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4)
+  &.can-toggle--size-large
+    input[type=checkbox]
+      &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+      &:checked
+        ~ label .can-toggle__switch:after
+          transform: translate3d(78px, 0, 0)
+        &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+    label
+      font-size: 14px
+      .can-toggle__switch
+        height: 50px
+        flex: 0 0 160px
+        border-radius: 4px
+        &:before
+          left: 80px
+          font-size: 14px
+          line-height: 50px
+          width: 80px
+          padding: 0 12px
+        &:after
+          top: 2px
+          left: 2px
+          border-radius: 2px
+          width: 78px
+          line-height: 46px
+          font-size: 14px
+        &:hover:after
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+  &.demo-rebrand-1
+    input[type=checkbox]
+      &[disabled] ~ label
+        color: rgba(181, 62, 116, 0.5)
+      &:focus ~ label .can-toggle__switch, &:hover ~ label .can-toggle__switch
+        background-color: #b53e74
+      &:focus ~ label .can-toggle__switch:after
+        color: #8f315c
+      &:hover ~ label
+        .can-toggle__switch:after
+          color: #8f315c
+        color: #a23768
+      &:checked
+        ~ label
+          &:hover
+            color: #39916a
+          .can-toggle__switch
+            background-color: #44ae7f
+            &:after
+              color: #368a65
+        &:focus ~ label .can-toggle__switch, &:hover ~ label .can-toggle__switch
+          background-color: #3d9c72
+        &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+          color: #2f7757
+    label
+      .can-toggle__label-text
+        flex: 1
+      .can-toggle__switch
+        transition: background-color 0.3s ease-in-out
+        background: #c14b81
+        &:before
+          color: rgba(255, 255, 255, 0.6)
+        &:after
+          -webkit-transition: -webkit-transform 0.3s ease-in-out
+          transition: transform 0.3s ease-in-out
+          color: #b53e74
+  &.demo-rebrand-2
+    input[type=checkbox]
+      &[disabled] ~ label
+        color: rgba(68, 68, 68, 0.5)
+      &:focus ~ label .can-toggle__switch, &:hover ~ label .can-toggle__switch
+        background-color: #444
+      &:focus ~ label .can-toggle__switch:after
+        color: #2b2b2b
+      &:hover ~ label
+        .can-toggle__switch:after
+          color: #2b2b2b
+        color: #373737
+      &:checked
+        ~ label
+          &:hover
+            color: #62b125
+          .can-toggle__switch
+            background-color: #75d32d
+            &:after
+              color: #5da924
+        &:focus ~ label .can-toggle__switch, &:hover ~ label .can-toggle__switch
+          background-color: #69be28
+        &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+          color: #52941f
+    label
+      .can-toggle__label-text
+        flex: 1
+      .can-toggle__switch
+        transition: background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+        background: #515151
+        &:before
+          color: rgba(255, 255, 255, 0.7)
+        &:after
+          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+          transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1)
+          color: #444
+    input[type=checkbox]
+      &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+      &:checked
+        ~ label .can-toggle__switch:after
+          transform: translate3d(58px, 0, 0)
+        &:focus ~ label .can-toggle__switch:after, &:hover ~ label .can-toggle__switch:after
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+    label
+      font-size: 13px
+      .can-toggle__switch
+        height: 60px
+        flex: 0 0 120px
+        border-radius: 60px
+        &:before
+          left: 60px
+          font-size: 13px
+          line-height: 60px
+          width: 60px
+          padding: 0 12px
+        &:after
+          top: 2px
+          left: 2px
+          border-radius: 30px
+          width: 58px
+          line-height: 56px
+          font-size: 13px
+        &:hover:after
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4)
+
+
+.color-white
+  color: #ffffff
